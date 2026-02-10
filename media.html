@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Media & Sermons | Liberty Chapel International</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="container" style="padding-top:34px;">
+    <h2>Sermons & Media</h2>
+    <p style="color:var(--muted); max-width:900px; margin:6px auto 18px;">Watch our live services, browse recent sermons, and download sermon notes.</p>
+
+    <!-- Live stream embed -->
+    <section class="card" style="max-width:980px; margin: 12px auto;">
+      <h3>Live Stream</h3>
+      <p style="text-align: center; margin-bottom: 15px;">Join us for our Sunday services and special events live from Word Liberty Chapel International.</p>
+      <div style="position:relative;padding-top:56.25%; overflow:hidden; border-radius:8px; margin-top:10px;">
+        <!-- Replace with actual YouTube live stream URL when available -->
+        <iframe src="https://www.youtube.com/embed/live_stream?channel=UCwordlibertychapel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+          style="position:absolute; inset:0; width:100%; height:100%;" aria-label="Live stream of church services"></iframe>
+      </div>
+      <p style="text-align: center; margin-top: 15px; font-size: 0.9rem; color: var(--muted-text);">Live services are typically held on Sundays at 8:00 AM and 10:30 AM GMT.</p>
+    </section>
+
+    <!-- Recent sermons -->
+    <section style="margin-top:18px;">
+      <div class="container-cards">
+        <article class="card">
+          <h3>Walking in Freedom</h3>
+          <p>Pastor John Mensah — Sep 2024</p>
+          <p><a href="#" class="btn">Watch</a> <a href="#" class="btn btn-alt">Transcript</a></p>
+          <div class="share-buttons">
+            <button class="share-btn-small" onclick="shareSermon('Walking in Freedom', 'https://youtube.com/watch?v=example1')" title="Share on Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <button class="share-btn-small" onclick="shareSermonTwitter('Walking in Freedom', 'https://youtube.com/watch?v=example1')" title="Share on Twitter">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button class="share-btn-small" onclick="shareSermonWhatsApp('Walking in Freedom', 'https://youtube.com/watch?v=example1')" title="Share on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>The Power of Prayer</h3>
+          <p>Pastor Sarah Johnson — Aug 2024</p>
+          <p><a href="#" class="btn">Watch</a> <a href="#" class="btn btn-alt">Download Notes</a></p>
+          <div class="share-buttons">
+            <button class="share-btn-small" onclick="shareSermon('The Power of Prayer', 'https://youtube.com/watch?v=example2')" title="Share on Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <button class="share-btn-small" onclick="shareSermonTwitter('The Power of Prayer', 'https://youtube.com/watch?v=example2')" title="Share on Twitter">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button class="share-btn-small" onclick="shareSermonWhatsApp('The Power of Prayer', 'https://youtube.com/watch?v=example2')" title="Share on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Faith That Moves Mountains</h3>
+          <p>Guest Speaker — Jul 2024</p>
+          <p><a href="#" class="btn">Watch</a></p>
+          <div class="share-buttons">
+            <button class="share-btn-small" onclick="shareSermon('Faith That Moves Mountains', 'https://youtube.com/watch?v=example3')" title="Share on Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <button class="share-btn-small" onclick="shareSermonTwitter('Faith That Moves Mountains', 'https://youtube.com/watch?v=example3')" title="Share on Twitter">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button class="share-btn-small" onclick="shareSermonWhatsApp('Faith That Moves Mountains', 'https://youtube.com/watch?v=example3')" title="Share on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>

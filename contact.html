@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Word Liberty Chapel International</title>
+  <meta name="description" content="Get in touch with Word Liberty Chapel International - location, phone, and contact form.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header id="navbar"></header>
+
+  <!-- Main Content -->
+  <main class="content">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you. Reach out using the details below, send us a message, or visit us in person.</p>
+
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px;">
+      <!-- Contact Information -->
+      <section class="contact-info">
+        <h2>Get In Touch</h2>
+        <div style="margin-top: 20px;">
+          <p><i class="fas fa-phone" aria-hidden="true" style="margin-right: 10px;"></i><strong>Phone:</strong> +233 552 010 444 / +233 552 010 333</p>
+          <p><i class="fas fa-envelope" aria-hidden="true" style="margin-right: 10px;"></i><strong>Email:</strong> info@wordlibertychapel.org</p>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true" style="margin-right: 10px;"></i><strong>Address:</strong> Word Liberty Chapel International, Outer Ring Road, Accra, Ghana</p>
+          <p><i class="fas fa-clock" aria-hidden="true" style="margin-right: 10px;"></i><strong>Service Times:</strong></p>
+          <ul style="margin-left: 30px; margin-top: 10px;">
+            <li>Sundays: 8:00 AM & 10:30 AM</li>
+            <li>Wednesdays: 7:00 PM (Bible Study)</li>
+            <li>Fridays: 7:00 PM (Youth Service)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="contact-form-section">
+        <h2>Send Us a Message</h2>
+        <form class="contact-form" id="contactForm" action="process_contact.php" method="POST">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your Name">
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+
+          <label for="phone">Your Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone (optional)" aria-label="Your Phone">
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+        <div id="contactMessage" style="margin-top: 15px; display: none;"></div>
+      </section>
+    </div>
+
+    <!-- Map Section -->
+    <section class="map" style="margin-top: 60px;">
+      <h2>Find Us Here</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.993934935884!2d-0.1975529!3d5.6037165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzYnMTMuNCJOIDDCsDExJzUwLjYiVw!5e0!3m2!1sen!2sgh!4v1695465467890!5m2!1sen!2sgh"
+        width="100%"
+        height="400"
+        style="border:0; border-radius: 10px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        aria-label="Church location map">
+      </iframe>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 Word Liberty Chapel International. All rights reserved.</p>
+  </footer>
+</body>
+</html>

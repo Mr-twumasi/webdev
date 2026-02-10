@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Give / Donate | Liberty Chapel International</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="container" style="padding-top:34px;">
+    <h2>Give / Donate</h2>
+    <p style="color:var(--muted);max-width:900px;margin:8px auto 18px;">Partner with us to support ministry, missions and community projects. Choose a giving option below.</p>
+
+    <div class="container-cards">
+      <div class="card">
+        <h3>One-off Donation</h3>
+        <p>Make a single donation to support our mission and outreach.</p>
+        <form id="giveForm" class="contact-form" aria-label="Give form" action="process_donation.php" method="POST">
+          <label for="donation-amount">Amount (GHC or USD)</label>
+          <input id="donation-amount" name="amount" type="number" step="0.01" placeholder="Enter amount" required min="1" aria-describedby="amount-help">
+          <small id="amount-help" style="color: var(--muted-text); font-size: 0.8rem;">Minimum donation: 1.00</small>
+
+          <label for="payment-method">Payment Method</label>
+          <select id="payment-method" name="method" required aria-describedby="method-help">
+            <option value="">Select payment method</option>
+            <option value="card">Card (Visa/Mastercard)</option>
+            <option value="mobile_money">Mobile Money (MTN/AirtelTigo)</option>
+            <option value="bank">Bank Transfer</option>
+          </select>
+          <small id="method-help" style="color: var(--muted-text); font-size: 0.8rem;">Choose your preferred payment option</small>
+
+          <button class="btn" type="submit">Give Now</button>
+        </form>
+        <div id="donationMessage" style="margin-top: 15px; display: none;"></div>
+      </div>
+
+      <div class="card">
+        <h3>Regular Giving</h3>
+        <p>Set up a recurring gift — monthly or weekly — to sustain ongoing ministry work. Contact our finance team for setup.</p>
+        <p><a class="btn" href="contact.html">Contact Finance</a></p>
+        <div class="share-buttons">
+          <button class="share-btn-small" onclick="shareOnFacebook()" title="Share donation page on Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button class="share-btn-small" onclick="shareOnTwitter()" title="Share donation page on Twitter">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button class="share-btn-small" onclick="shareOnWhatsApp()" title="Share donation page on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Projects & Missions</h3>
+        <p>Support specific projects like relief, community outreach and mission trips.</p>
+        <p><a class="btn" href="contact.html">Learn More</a></p>
+        <div class="share-buttons">
+          <button class="share-btn-small" onclick="shareOnFacebook()" title="Share projects page on Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button class="share-btn-small" onclick="shareOnTwitter()" title="Share projects page on Twitter">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button class="share-btn-small" onclick="shareOnWhatsApp()" title="Share projects page on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
