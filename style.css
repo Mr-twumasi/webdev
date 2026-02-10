@@ -91,7 +91,6 @@ body.dark .hero .btn-alt {
 }
 
 .logo a {
-  text-decoration: none;
   color: #fff;
   font-size: 1.2rem;
   font-weight: 700;
@@ -101,7 +100,8 @@ body.dark .hero .btn-alt {
   color: #f39c12;
 }
 
-.nav-links {
+.  text-decoration: none;
+nav-links {
   list-style: none;
   display: flex;
   gap: 25px;
@@ -924,8 +924,10 @@ footer {
 }
 
 .footer-bottom img {
-  margin-bottom: 8px;
-  max-width: 70px;
+    width: 45px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 10px;
 }
 
 .footer-bottom p {
